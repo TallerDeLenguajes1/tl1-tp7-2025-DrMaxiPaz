@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using EspacioCalculadora;
 
-Calculadora c = new Calculadora();
+Calculadora c = new();
 /*
 c.Dato = 0;
 Console.WriteLine($"El valor de la variable es {c.Resultado}");
@@ -22,7 +22,7 @@ do
 {
     Console.WriteLine("\n\t\tCalculadora\n\t1. Sumar\n\t2. Restar\n\t3. Multiplicar\n\t4. Dividir\n\t5. Limpiar\n\t6. Salir");
     Console.WriteLine("Ingrese una opcion: ");
-    if (int.TryParse(Console.ReadLine(), out opc)) ;
+    if (int.TryParse(Console.ReadLine(), out opc))
     {
         switch (opc)
         {
